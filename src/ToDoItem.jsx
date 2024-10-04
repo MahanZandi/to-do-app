@@ -1,0 +1,34 @@
+import React, { Component } from 'react';
+import { MdDelete } from "react-icons/md";
+import { TiTick } from "react-icons/ti";
+function ToDoItem({text , todo , todos , setTodos}) {
+
+    const deletehandler = () => {
+        setTodos(todos.filter((el) => el.id !== todo.id))
+    }
+
+    const completeHandeler = () => {
+        setTodos(todos.map((item) => {
+            if(item.id === todo.id){
+                return {
+                    ...item , completed: !item.completed
+                }
+            }
+            return item;
+        }))
+    };
+
+    return ( 
+        <ul className='flex justify-center'>
+            <div className={`${todo.completed ? "completed" : ""} todo`}>
+                <li className={` text-gray-100 pl-3 `}> {text} </li>
+                <div className='ml-6'>
+                    <button onClick={completeHandeler} className='bg-gray-100 m-1 p-2 rounded-[50%] standard-button'><TiTick size={30} /></button>
+                    <button onClick={deletehandler} className='bg-gray-200 m-1 p-2 rounded-[50%] standard-button'><MdDelete size={30}/></button>
+                </div>
+            </div>
+        </ul>
+     );
+}
+
+export default ToDoItem;
