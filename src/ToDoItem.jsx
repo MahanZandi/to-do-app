@@ -6,7 +6,8 @@ function ToDoItem({text , todo , todos , setTodos}) {
     const deletehandler = () => {
         const data = todos.filter((el) => el.id !== todo.id)
         setTodos(data)
-        localStorage.setItem('text', data)
+        localStorage.setItem('text', JSON.stringify(data))
+        console.log(data)
     }
 
     const completeHandeler = () => {
@@ -21,7 +22,7 @@ function ToDoItem({text , todo , todos , setTodos}) {
     };
 
     return ( 
-        <ul className='flex justify-center text-sm sm:text-base '>
+        <ul className='flex justify-center text-sm sm:text-base tilt-in-top-1'>
             <div className={`${todo.completed ? "completed" : ""} todo `}>
                 <li className={` text-gray-100 pl-3 `}> {text} </li>
                 <div className='pl-6'>
