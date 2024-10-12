@@ -8,13 +8,13 @@ import ToDoList from './toDoList';
 
 
 function App() {
-    const [inputText , setinputText] = useState(""); 
-    const [todos , setTodos] = useState([]); //task lists لیست تسک های ما
+    const [inputText , setinputText] = useState("");
+    const list = localStorage.getItem('text') 
+    const [todos , setTodos] = useState(list ? JSON.parse(list) : []); //task lists لیست تسک های ما
     const [errorText , setErrorText] = useState("");
     const { t, i18n } = useTranslation();
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
-        
       };
 
     return ( 

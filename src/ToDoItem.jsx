@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { MdDelete } from "react-icons/md";
 import { TiTick } from "react-icons/ti";
 function ToDoItem({text , todo , todos , setTodos}) {
 
     const deletehandler = () => {
-        setTodos(todos.filter((el) => el.id !== todo.id))
+        const data = todos.filter((el) => el.id !== todo.id)
+        setTodos(data)
+        localStorage.setItem('text', data)
     }
 
     const completeHandeler = () => {

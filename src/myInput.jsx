@@ -1,22 +1,23 @@
 import { React  } from 'react';
 import Clock from './clock';
-import ToDoList from './toDoList';
 
-function MyInput({setinputText , inputText , todos , setTodos , setErrorText , changeLanguage , t}) {
+function MyInput({setinputText , inputText , todos , setTodos , setErrorText , t}) {
 
     const inputTextHandler = (e) => {
-        setinputText(e.target.value) // update input این تابع اینپوت ما را اپدیت میکند 
+        setinputText(e.target.value)
     };
 
     const submitTodoHandler = (e) => {
         e.preventDefault();
         if(inputText){
-        setTodos([
-            ...todos,
-            { text: inputText, completed: false, id: Date.now()}
-        ]);
-        setinputText("");
-        setErrorText("");
+            const data = [
+                ...todos,
+                { text: inputText, completed: false, id: Date.now()}
+            ]
+            setTodos(data);
+            localStorage.setItem("text" , JSON.stringify(data))
+            setinputText("");
+            setErrorText("");
         }else {
             setErrorText("Please Enter a task ...")
         }
