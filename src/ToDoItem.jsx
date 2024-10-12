@@ -11,14 +11,16 @@ function ToDoItem({text , todo , todos , setTodos}) {
     }
 
     const completeHandeler = () => {
-        setTodos(todos.map((item) => {
+        const data = todos.map((item) => {
             if(item.id === todo.id){
                 return {
-                    ...item , completed: !item.completed
+                    ...item , completed: !item.completed , 
                 }
             }
             return item;
-        }))
+        })
+        setTodos(data)
+        localStorage.setItem('text' , JSON.stringify(data))
     };
 
     return ( 
