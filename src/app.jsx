@@ -1,7 +1,5 @@
 import { React , useState} from 'react';
 import { useTranslation } from 'react-i18next';
-import '../src/index.css';
-import '../src/style.css';
 import Header from './header';
 import MyInput from './myInput';
 import ToDoList from './toDoList';

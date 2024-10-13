@@ -5,7 +5,7 @@ import { React , useEffect, useState } from 'react';
 
 function Clock() {
     const [time , setTime] = useState(
-        new Date().toLocaleTimeString("fa" , { hour12 : true})
+        new Date().toLocaleTimeString("us" , { hour12 : true})
     );
     
     useEffect(() => {
