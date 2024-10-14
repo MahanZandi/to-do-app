@@ -1,6 +1,6 @@
 import { React , useState} from 'react';
 import { useTranslation } from 'react-i18next';
-import Header from './header';
+import NavBar from './navBar'
 import MyInput from './myInput';
 import ToDoList from './toDoList';
 
@@ -16,11 +16,11 @@ function App() {
       };
 
     return ( 
-        <div className={`min-h-screen font-sans`}>
-            <Header
-             t={t}
-             changeLanguage={changeLanguage}
-            />
+        <div className={`min-h-screen font-sans tilt-in-top-1`}>
+            <NavBar t={t}/>
+            <h1 className=' text-gray-200 font-sans text-[64px] sm:text-[106px] flex justify-center pt-[40px] pb-[30px] '>
+                {t('header')}
+            </h1>            
             <MyInput 
             todos={todos} 
             setTodos={setTodos} 
