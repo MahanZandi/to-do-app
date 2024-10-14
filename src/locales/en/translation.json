@@ -1,5 +1,12 @@
 {
     "header" : "Just do it." ,
     "addTask" : "Add Task" ,
-    "addBtn" : "I Got This!"
+    "addBtn" : "I Got This!",
+    "Contact" : "Contact us :" ,
+    "Name" : "Enter your name" ,
+    "Pass" : "Enter your password" ,
+    "Comment" : "Add Your Comment" ,
+    "Submit" : "Submit" ,
+    "English" : "English" ,
+    "Persian" : "Persian"
 }

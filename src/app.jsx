@@ -16,7 +16,7 @@ function App() {
       };
 
     return ( 
-        <div className={`min-h-screen `}>
+        <div className={`min-h-screen font-sans`}>
             <Header
              t={t}
              changeLanguage={changeLanguage}

@@ -19,9 +19,9 @@ function Header({changeLanguage , t}) {
     return ( 
         <div className='tilt-in-top-1'>
             <div className='flex justify-center sm:justify-end gap-10 sm:gap-4 pt-[3%] mr-[3%] '>
-                <select onClick={(e) => changeLanguage(e.target.value)} className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'>
-                    <option value="en">English</option>
-                    <option value="fa">Persian</option>
+                <select onClick={(e) => changeLanguage(e.target.value)} className=' standard-button bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'>
+                    <option value="en">{t('English')}</option>
+                    <option value="fa">{t('Persian')}</option>
                 </select>
                 <div onClick={setFirstTheme} className='w-9 h-9 rounded-full bg-gradient-to-r from-neutral-600 to-cyan-950 shadow-themes border opacity-75 hover:opacity-100'></div>
                 <div onClick={setSecendTheme} className='w-9 h-9 border rounded-full bg-gradient-to-b from-gray-800 to-yellow-500 opacity-75 hover:opacity-100 '></div>
