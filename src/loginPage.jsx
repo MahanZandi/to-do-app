@@ -27,7 +27,7 @@ function LoginPage() {
                     <div className='bg-[#181a1a] p-4 text-gray-100 col-span-2 sm:col-span-1 myInput grid rounded-2xl'>
                         <h1 >{t('introduce yourself')}</h1>
                         <p className='pt-1.5'> {t('Description')} </p>
-                        <a className='pt-3 flex text-4xl items-center ' href="">
+                        <a className='pt-3 flex text-4xl items-center ' href="https://github.com/MahanZandi">
                             <div className='hover:text-sky-500 transition-all flex items-center'>
                                 <AiFillGithub /> 
                                 <p className='text-lg pl-2'> {t('Click')} </p>
