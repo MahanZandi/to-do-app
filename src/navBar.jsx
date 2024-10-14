@@ -1,6 +1,4 @@
 import React from 'react';
-import { MdEmail } from "react-icons/md";
-import { IoMdCall } from "react-icons/io";
 import { Link } from 'react-router-dom';
 
 function NavBar({t , changeLanguage}) {
@@ -24,16 +22,7 @@ function NavBar({t , changeLanguage}) {
         <div>
             <div  className='  bg-[#181a1a] mb-10 sm:h-auto flex justify-center items-center flex-col sm:flex-row py-10  '>
                 <Link to='/ToDoApp' className='text-gray-100 text-2xl md:text-3xl pb-3 sm:py-0 hover:text-sky-500 transition-all'>{t('Home')}</Link>
-                <h1 className='text-gray-100 text-2xl md:text-3xl px-10 hover:text-sky-500 transition-all'>{t('Contact')}</h1>
-                
-                
-                {/* <div className='text-gray-50 flex  items-center text-4xl pt-6 sm:pt-2 sm:pl-10'><MdEmail />
-                    <div className='text-base p-3'>zandim221@gmail.com</div>
-                </div>
-
-                <div className='text-gray-50 flex items-center text-4xl pt-4 px-0 md:px-5'><IoMdCall />
-                    <div className='text-base p-3'>09395526996</div>
-                </div>         */}
+                <Link to='/LoginPage' className='text-gray-100 text-2xl md:text-3xl px-10 hover:text-sky-500 transition-all'>{t('Login')}</Link>
 
                 <div className='flex gap-4 items-center flex-col sm:flex-row pt-4 sm:pt-0 sm:pr-[3%] '>
                     <div className='flex  gap-4'>

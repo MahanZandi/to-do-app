@@ -2,12 +2,15 @@
     "header" : "Just do it." ,
     "addTask" : "Add Task" ,
     "addBtn" : "I Got This!",
-    "Contact" : "Contact us " ,
+    "Login" : "Login Page " ,
     "Name" : "Enter your name" ,
     "Pass" : "Enter your password" ,
     "Comment" : "Add Your Comment" ,
     "Submit" : "Submit" ,
     "English" : "English" ,
     "Persian" : "Persian" ,
-    "Home" : "Home"
+    "Home" : "Home" ,
+    "introduce yourself" : "My name is Mahan" ,
+    "Description" : "Follow me on GitHub to see more of my projects." ,
+    "Click" : "Click in"
 }
