@@ -1,4 +1,4 @@
-import App from './app.jsx';
+import HomePage from './HomePage.jsx';
 import LoginPage from './loginPage.jsx';
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -10,7 +10,7 @@ import { BrowserRouter , Routes , Route , Navigate} from 'react-router-dom';
 ReactDOM.render(
     <BrowserRouter>
         <Routes>
-            <Route path='/ToDoApp' element={<App/>}/>
+            <Route path='/HomePage' element={<HomePage/>}/>
             <Route path='/LoginPage' element={<Navigate replace to="/"/>}/>
             <Route path='/' element={<LoginPage/>}/>
         </Routes>

@@ -21,7 +21,7 @@ function NavBar({t , changeLanguage}) {
     return ( 
         <div>
             <div  className='  bg-[#181a1a] mb-10 sm:h-auto flex justify-center items-center flex-col sm:flex-row py-10  '>
-                <Link to='/ToDoApp' className='text-gray-100 text-2xl md:text-3xl pb-3 sm:py-0 hover:text-sky-500 transition-all'>{t('Home')}</Link>
+                <Link to='/HomePage' className='text-gray-100 text-2xl md:text-3xl pb-3 sm:py-0 hover:text-sky-500 transition-all'>{t('Home')}</Link>
                 <Link to='/LoginPage' className='text-gray-100 text-2xl md:text-3xl px-10 hover:text-sky-500 transition-all'>{t('Login')}</Link>
 
                 <div className='flex gap-4 items-center flex-col sm:flex-row pt-4 sm:pt-0 sm:pr-[3%] '>
