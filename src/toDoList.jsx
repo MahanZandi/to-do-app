@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ToDoItem from './ToDoItem';
 
 function ToDoList({todos , setTodos}) {

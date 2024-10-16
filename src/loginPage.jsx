@@ -10,6 +10,7 @@ function LoginPage() {
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
       };
+      
     return ( 
         <div className='min-h-screen w-full tilt-in-top-1 font-sans'>
             <NavBar t={t} changeLanguage={changeLanguage}/>
@@ -50,7 +51,6 @@ function LoginPage() {
                             </div>
                         </div> 
                     </div>
-
                 </div>
             </form>
         </div>

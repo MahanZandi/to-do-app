@@ -1,7 +1,7 @@
 import { React  } from 'react';
 import Clock from './clock';
 
-function MyInput({setinputText , inputText , todos , setTodos , setErrorText , t}) {
+function MyInput({setinputText , inputText , todos , setTodos , setErrorText , t }) {
 
     const inputTextHandler = (e) => {
         setinputText(e.target.value)
@@ -22,6 +22,8 @@ function MyInput({setinputText , inputText , todos , setTodos , setErrorText , t
             setErrorText("Please Enter a task ...")
         }
     }
+
+    
 
     return ( 
         <div className='text-sm sm:text-base tilt-in-top-1'>

@@ -17,7 +17,7 @@ function App() {
 
     return ( 
         <div className={`min-h-screen font-sans tilt-in-top-1`}>
-            <NavBar t={t}/>
+            <NavBar t={t} changeLanguage={changeLanguage}/>
             <h1 className=' text-gray-200 font-sans text-[64px] sm:text-[106px] flex justify-center pt-[40px] pb-[30px] '>
                 {t('header')}
             </h1>            
