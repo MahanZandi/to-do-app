@@ -1,5 +1,6 @@
 import HomePage from './HomePage.jsx';
 import LoginPage from './loginPage.jsx';
+import Contact from './contactPage.jsx';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import '../src/index.css';
@@ -12,6 +13,7 @@ ReactDOM.render(
         <Routes>
             <Route path='/HomePage' element={<HomePage/>}/>
             <Route path='/LoginPage' element={<Navigate replace to="/"/>}/>
+            <Route path='Contact' element={<Contact/>} />
             <Route path='/' element={<LoginPage/>}/>
         </Routes>
     </BrowserRouter>

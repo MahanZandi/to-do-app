@@ -10,7 +10,9 @@
     "English" : "English" ,
     "Persian" : "Persian" ,
     "Home" : "Home" ,
-    "introduce yourself" : "My name is Mahan" ,
-    "Description" : "Follow me on GitHub to see more of my projects." ,
-    "Click" : "Click in"
+    "introduce yourself" : "Hi Im Mahan , Im Front end developer" ,
+    "Description" : "I live in Iran, Golestan province, Kordkoi city, and if you are interested in my programming topics, click on the GitHub link below to see my other projects. I will be glad to follow me on GitHub." ,
+    "Click" : "Click in" ,
+    "Contact us" : "Contact us",
+    "Im Front end developer" : "Im Front end developer"
 }
